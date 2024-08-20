@@ -1,0 +1,24 @@
+[package]
+name = "bla"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "bla"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+
+[dependencies]
+anchor-lang = "0.30.1"
+ark-bn254 = "0.4.0"
+ark-ff = "0.4.2"
+num-bigint = "0.4.6"
+gnark-bn254-verifier = "1.0.2"
